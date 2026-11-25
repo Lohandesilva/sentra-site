@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentra Technologies | Variation capture for commercial subcontractors</title>
+<meta name="description" content="Sentra phones your foremen at knock-off, captures variation details, writes draft VO notes to your job record and sends the office a same-day summary. No app for the crew.">
+<meta name="theme-color" content="#0D1B2E">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+<!-- Fonts: the only external dependency. Montserrat = headings, Lato = body. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Sentra Technologies, home">
+      <!-- LOGO: your original logo file (white on transparent). Files are in assets/img/. -->
+      <img class="mark" src="assets/img/sentra-mark.png" alt="" width="80" height="27">
+      <span class="brand-text"><b>Sentra Technologies</b><span>Smart . Secure . Sentra</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span class="bars"></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About &amp; Contact</a>
+      <a href="legal.html">Legal &amp; Security</a>
+      <a class="btn btn-brass btn-sm nav-cta" href="about.html#book">Book a Walkthrough</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- ========================= HERO ========================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Stop eating variations. Get every one onto the progress claim.</h1>
+      <p class="lead">
+        Sentra phones your foremen at knock-off and pulls out the details of any extra work: scope, hours, materials and who gave the instruction.
+        It writes that into your job record and sends your PM and estimator a summary the same day, well before claim cut-off.
+        No app for the crew. The foreman just answers the phone.
+      </p>
+
+      <div class="cta-row">
+        <!-- PRIMARY CTA: goes to the booking section on the About & Contact page.
+             To send people straight to the calendar instead, set href to the calendar URL (see about.html, id="calendar-link"). -->
+        <a class="btn btn-brass" href="about.html#book">Book a 20-Minute Walkthrough</a>
+        <a class="btn btn-ghost" href="pricing.html">See Pricing</a>
+      </div>
+
+      <ul class="chips" aria-label="Trades this is built for">
+        <li>Electrical</li><li>HVAC</li><li>Fire</li><li>Hydraulic</li><li>Commercial Fitout</li>
+      </ul>
+
+      <!-- AUDIO DEMO SLOT -->
+      <div class="audio-card" id="audio-demo">
+        <h2>Listen to a foreman call</h2>
+        <p>A short check-in call to a site foreman at knock-off.</p>
+        <!-- ==== AUDIO FILE SLOT ====
+             Put your foreman roleplay recording at assets/audio/foreman-call-example.mp3
+             (or change the src below). MP3 recommended. -->
+        <audio controls preload="none" aria-label="Foreman call example recording">
+          <source src="assets/audio/foreman-call-example.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+        <small>Roleplay recording for demonstration. Not a real client call.</small>
+      </div>
+    </div>
+
+    <!-- Illustrative record. Clearly labelled as an example, no real client data. -->
+    <aside class="capture" aria-label="Illustrative example of a captured variation">
+      <div class="capture-head">
+        <b>Variation capture</b>
+        <span>Illustrative example</span>
+      </div>
+      <dl>
+        <div class="row"><dt>Job</dt><dd>L4 fitout, CBD <span class="tag">Active in ERP</span></dd></div>
+        <div class="row"><dt>Call</dt><dd>3:45 pm, to the assigned foreman</dd></div>
+        <div class="row"><dt>Out of scope</dt><dd>Six extra data outlets in the meeting room, run from the existing rack</dd></div>
+        <div class="row"><dt>Labour</dt><dd>Leading hand plus one sparky, 3 hrs each</dd></div>
+        <div class="row"><dt>Materials</dt><dd>Approx. 60 m Cat6A, 6 outlets, plates</dd></div>
+        <div class="row"><dt>Instructed by</dt><dd>Builder's super, verbal, on site</dd></div>
+        <div class="row"><dt>Status</dt><dd>Draft VO notes written to the job. Summary sent to the PM. <span class="flagline">Flag: no SI on file, chase before the month-end claim.</span></dd></div>
+      </dl>
+      <div class="capture-foot">Example only. Fields are mapped to your own ERP and variation process in the written scope.</div>
+    </aside>
+  </div>
+</section>
+
+<!-- ========================= WORKFLOW (ANIMATED SVG) ========================= -->
+<section class="block dark" id="workflow" aria-labelledby="workflow-h">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2 id="workflow-h">From the tools to the progress claim, in one loop</h2>
+      <p>One closed loop that runs off your existing job records. Select any stage to see what happens and a worked example.</p>
+    </div>
+
+    <div class="flow-panel">
+      <p class="flow-hint">Hover, tap or use the keyboard to inspect each stage</p>
+      <!-- #flow is filled in by assets/js/flow.js. Horizontal pipeline on desktop, vertical flow on mobile. -->
+      <div id="flow" class="flow" role="group" aria-label="Variation capture workflow diagram">
+        <noscript>
+          <ol style="color:#D3DCE8;line-height:1.8">
+            <li>ERP Active Jobs Sync: reads active jobs and assigned foremen from your ERP.</li>
+            <li>Outbound Foreman Check-In Call: phones the foreman at knock-off or on the drive home.</li>
+            <li>Scope and Variation Extraction: captures out-of-scope work, hours, materials and who instructed it.</li>
+            <li>ERP Update and Office Summary: writes draft VO notes to the job record and sends the PM or estimator a summary.</li>
+          </ol>
+        </noscript>
+      </div>
+
+      <div class="detail" id="stage-detail" aria-live="polite">
+        <div>
+          <h3 id="d-title"></h3>
+          <p id="d-what"></p>
+        </div>
+        <div class="ex">
+          <b>Worked example (illustrative)</b>
+          <p id="d-ex"></p>
+        </div>
+      </div>
+      <p class="flow-note">The loop closes because the updated job record is what tomorrow's sync reads from. Nothing sits in a diary, a text thread or someone's head.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PROBLEM ========================= -->
+<section class="block" id="problem" aria-labelledby="problem-h">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Where the margin goes</span>
+      <h2 id="problem-h">The work gets built on site. The paperwork gets chased at month-end.</h2>
+      <p>Nobody means to give work away. It leaks out in the gap between the site and the claim.</p>
+    </div>
+
+    <div class="grid cols-3">
+      <article class="card">
+        <span class="num">1</span>
+        <h3>Verbal instructions, nothing in writing</h3>
+        <p>The builder's super says "while you're up there, put another circuit in" or "shift that duct run, the ceiling's changed". Everyone nods and nobody raises an SI. By claim time there's no instruction on file, no hours, and a builder's QS who'll ask for both.</p>
+      </article>
+      <article class="card">
+        <span class="num">2</span>
+        <h3>Foremen are cooked by knock-off</h3>
+        <p>A leading hand coming off a ten-hour day isn't opening an app or typing up a docket in the ute. Another login for the crew is another thing that doesn't get used. A phone call on the drive home does.</p>
+      </article>
+      <article class="card">
+        <span class="num">3</span>
+        <h3>The office chases at month-end</h3>
+        <p>The PM rings the foreman after claim cut-off and gets "I reckon about two days?". The variation goes in soft, goes in late, or gets knocked back. In Victoria you get one payment claim a month, so whatever misses the cut-off waits for the next one.</p>
+      </article>
+    </div>
+
+    <div class="callout">
+      Unclaimed variations never show up as a line on the WIP. They show up as a job that finished tighter than the estimate said it would.
+    </div>
+  </div>
+</section>
+
+<!-- ========================= TRADES ========================= -->
+<section class="block alt" id="trades" aria-labelledby="trades-h">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Built around your trade</span>
+      <h2 id="trades-h">The questions are different on an electrical job than on a fire job</h2>
+      <p>The check-in call is scripted for the way each trade actually picks up extra work, so the foreman gets asked the right things in the right order.</p>
+    </div>
+
+    <div class="grid grid-auto trades-grid">
+      <article class="card trade">
+        <h3>Electrical</h3>
+        <p>Extra rough-in and additional circuits, switchboard changes, points relocated after the ceiling grid or partitions move, and after-hours work to suit the builder's program.</p>
+      </article>
+      <article class="card trade">
+        <h3>HVAC</h3>
+        <p>Extra duct runs and diffuser relocations after services coordination, FCU position changes, additional controls points, and re-balancing after the fitout shifts.</p>
+      </article>
+      <article class="card trade">
+        <h3>Fire</h3>
+        <p>Head and detector relocations after ceiling changes, additional devices, FIP re-programming, and re-commissioning and re-testing for the certifier.</p>
+      </article>
+      <article class="card trade">
+        <h3>Hydraulic</h3>
+        <p>Extra drops and floor wastes, relocated fixtures, additional pressure tests, rework after wet areas get redesigned, and out-of-sequence attendance.</p>
+      </article>
+      <article class="card trade">
+        <h3>Commercial Fitout</h3>
+        <p>Partition and framing changes, plasterboard rework, extra ceilings and bulkheads, additional mobilisations, and weekend or after-hours work.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= THREE STEPS ========================= -->
+<section class="block paper" id="steps" aria-labelledby="steps-h">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Three steps</span>
+      <h2 id="steps-h">No new software for your crews</h2>
+    </div>
+
+    <div class="grid cols-3">
+      <article class="card">
+        <span class="k">Step 1</span>
+        <h3>ERP job sync</h3>
+        <p>Sentra reads your active jobs and assigned foremen from your ERP or job management system, so it knows who to ring and which job they're on.</p>
+      </article>
+      <article class="card">
+        <span class="k">Step 2</span>
+        <h3>Foreman check-in</h3>
+        <p>A short phone call at knock-off or on the drive home. A few fixed questions on extra work, hours, materials and who instructed it. Two or three minutes, voice only.</p>
+      </article>
+      <article class="card">
+        <span class="k">Step 3</span>
+        <h3>Job record and office summary</h3>
+        <p>Draft VO notes land on the job record. The PM, estimator or office gets a summary the same day, with any missing SI or written confirmation flagged for chasing.</p>
+      </article>
+    </div>
+
+    <div class="isnt">
+      <div><b>Not a chatbot</b>A capture workflow with fixed questions and a fixed output.</div>
+      <div><b>Not an app for crews</b>Foremen only need their phone to answer a call.</div>
+      <div><b>Not a new ERP</b>It feeds the system you already run. Job records stay where they are.</div>
+      <div><b>Not an approver</b>Nothing is priced, approved or claimed automatically. Your office decides.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= SYSTEMS ========================= -->
+<!-- LOGOS: names are shown as text tiles for now. To use official logo files, save them in assets/img/logos/
+     and replace a tile's text with, for example: <img src="assets/img/logos/xero.svg" alt="Xero" height="28">
+     Only use official files from each company's brand or media page, and follow their usage rules. -->
+<section class="block alt" id="systems" aria-labelledby="systems-h">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Systems</span>
+      <h2 id="systems-h">Built to sit alongside what you already run</h2>
+      <p>Sentra works with your existing job system and accounts and runs on established infrastructure. Nothing to rip out.</p>
+    </div>
+    <div class="sys-groups">
+      <div class="sys-group">
+        <h3>Job systems and ERP</h3>
+        <ul class="sys-list" aria-label="Job systems and ERP">
+          <li>Simpro</li><li>Odoo</li><li>SAP</li>
+        </ul>
+      </div>
+      <div class="sys-group">
+        <h3>Accounting</h3>
+        <ul class="sys-list" aria-label="Accounting">
+          <li>Xero</li><li>QuickBooks</li>
+        </ul>
+      </div>
+      <div class="sys-group wide">
+        <h3>Infrastructure and AI we use</h3>
+        <ul class="sys-list" aria-label="Infrastructure and AI">
+          <li>Hetzner</li><li>AWS</li><li>Claude</li><li>OpenAI</li><li>ElevenLabs</li>
+        </ul>
+      </div>
+    </div>
+    <p class="sys-note">Product names belong to their respective owners. Sentra Technologies is independent and is not affiliated with, endorsed by or a partner of any of them.</p>
+  </div>
+</section>
+
+<!-- ========================= PRICING + PAYMENT TEASER ========================= -->
+<section class="block dark" aria-labelledby="price-teaser-h">
+  <div class="wrap pp-grid">
+    <div>
+      <span class="eyebrow">Pricing</span>
+      <h2 id="price-teaser-h" style="font-size:clamp(26px,3.4vw,36px)">One flat monthly price, sized to your foremen</h2>
+      <p style="color:var(--on-dark);font-size:18px">
+        Packages start at A$390 a month for up to five foremen, with no setup fee. Larger crews and custom builds are quoted after a free consultation.
+        Every package starts with a written scope and quote, and nothing is paid before you've seen it.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-brass" href="pricing.html">See packages and pricing</a>
+        <a class="btn btn-ghost" href="pricing.html#payments">How payment works</a>
+      </div>
+    </div>
+    <aside class="trust" aria-label="Payments">
+      <!-- PayPal badge image: assets/img/paypal-secure.png -->
+      <div class="pp-badge"><img src="assets/img/paypal-secure.png" alt="Secure payments by PayPal. Visa and Mastercard accepted through PayPal." width="237" height="105"></div>
+      <h3>Secure payments with PayPal</h3>
+      <ul>
+        <li>Every payment is an itemised PayPal invoice that quotes your written scope number.</li>
+        <li>Your card or bank details go to PayPal. Sentra never sees or stores them.</li>
+        <li>One PayPal invoice a month. No setup fee, and no payment before a written scope.</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ========================= FINAL CTA ========================= -->
+<section class="cta-band block tight">
+  <div class="wrap inner">
+    <div>
+      <h2>Bring one job where extra work went unclaimed</h2>
+      <p>We'll walk through how it got from site to claim, where it dropped out, and whether this fits the way your business runs variations.</p>
+    </div>
+    <a class="btn btn-brass" href="about.html#book">Book a 20-Minute Walkthrough</a>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <img class="foot-logo" src="assets/img/sentra-logo.png" alt="Sentra Technologies. Smart . Secure . Sentra" width="230" height="116">
+      <p>Enterprise software for commercial subcontractors.</p>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+        <li><a href="legal.html">Legal &amp; Security</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:lohan@sentratechnologies.com">lohan@sentratechnologies.com</a></li>
+        <li><a href="tel:+61370480469">+61 3 704 804 69</a></li>
+        <li><a href="tel:+94704669834">+94 70 4669834</a></li>
+        <li><a href="https://wa.me/94704669834" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Payments</h4>
+      <p>Secure payments by PayPal invoice. Your card and bank details go to PayPal, never to Sentra.</p>
+      <p><a href="pricing.html#payments">How payment works</a></p>
+    </div>
+  </div>
+  <div class="wrap foot-base">
+    <p>&copy; <span id="yr">2026</span> Sentra Technologies Software Solutions (Pvt) Ltd</p>
+    <p><a href="legal.html#privacy">Privacy</a> &middot; <a href="legal.html#terms">Terms</a> &middot; <a href="legal.html#security">Security</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script src="assets/js/flow.js"></script>
+</body>
+</html>
